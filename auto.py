@@ -1,5 +1,5 @@
 class Auto:
-
+    cantidadCreados = 0
     def __init__(self, modelo = None, precio = None, asientos = [], marca = None, motor = None, registro = None, cantidadCreados = None):
         self.modelo = modelo
         self.precio = precio
@@ -7,7 +7,6 @@ class Auto:
         self.marca = marca
         self.motor = motor
         self.registro = registro
-        self.cantidad = cantidadCreados
 
     def cantidadAsientos(self):
         return len([asiento for asiento in self.asientos if asiento is not None])
